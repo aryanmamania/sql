@@ -15,4 +15,19 @@ insert info student values (1 , "ARyan" , 23)  (to make values in sql)
 
 select * from student (to print values in tables)
 
+char
+varchar
+blob
+int
+tinyint
+midint
+bit
+float 
+double
+boolean
+date
+year
+signed
+unsigned  //to increase range
+
 */
