@@ -28,6 +28,25 @@ boolean
 date
 year
 signed
-unsigned  //to increase range
+unsigned  //to increase 
+
+
+types of database 
+ddl
+dml
+dql
+dcl
+tcl
+
+create datebase if not exist classroom
+drop databse if exist classroom
+
+
+create table students(
+    rollnumber int primary key,
+    name varchar (40)
+)
+
+drop table students
 
 */
