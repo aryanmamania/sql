@@ -47,6 +47,11 @@ create table students(
     name varchar (40)
 )
 
-drop table students
+drop table students;
+
+insert into student (id, name, age)
+values
+(3, "XYZ", 23),
+(4, "Abc", $%)
 
 */
