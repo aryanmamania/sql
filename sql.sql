@@ -7,7 +7,7 @@ use temp1 (to enter a specific database)
 create table student (to create a table) (
     id int PRIMARY KEY,  (first column named id , primary key should always have different values)
     name varchar (50),   (next column is name and we used varchar because name can be either string or character)
-    age int not null 
+    age int not null      (not null means u need to add some values it cant be blank)
 )
 
 insert info student values (1 , "ARyan" , 23)  (to make values in sql)
@@ -54,4 +54,10 @@ values
 (3, "XYZ", 23),
 (4, "Abc", $%)
 
+distint (where we dont get duplicate values)
+Add WHERE to add condition
+
+select * from student where marks > 80 and city = mumbai
+select * from student where marks > 80 or city = mumbai
+select * from student where city in ("delhi" , "mumbai")
 */
