@@ -60,4 +60,44 @@ Add WHERE to add condition
 select * from student where marks > 80 and city = mumbai
 select * from student where marks > 80 or city = mumbai
 select * from student where city in ("delhi" , "mumbai")
+select * from student order by city asc
+
+aggerate functions 
+COUNT()
+MAX()
+MIN()
+SUM()
+AVG()
+
+
+
+
+
+CREATE DATABASE TEST
+USE TEST
+
+CREATE TABLE CITY(
+RollNumber int primary key,
+name varchar(50) ,
+marks int,
+grade char(1),
+City char(50)
+)
+
+insert into CITY (RollNumber , name, marks , grade , city)
+values
+(101 , "Aryan", 100, "A" , "New Delhi" ),
+(102, "Nancy", 99, "A" , "Jaipur"),
+(103, "Aman", 85, "B" , "Haryana"),
+(104, "Hitesh" , 90, "A" , "Haryana"),
+(105, "Morrish" , 70 , "C", "Up")
+
+
+SELECT city, AVG(marks)
+FROM CITY
+GROUP BY city
+ORDER BY city ASC;
+
+
+
 */
